@@ -1,0 +1,30 @@
+.main {
+    height: 80px;
+    width: 400px;
+    background-color: gray;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 3px 3px 8px 0px black;
+}
+
+.main>button {
+    float: left;
+    height: 100%;
+    width: 100px;
+    outline: none;
+    border: 0;
+    cursor: pointer;
+    font-size: 50px;
+    color: crimson;
+}
+
+.main>span {
+    display: block;
+    float: left;
+    width: 200px;
+    height: 100%;
+    text-align: center;
+    line-height: 80px;
+    font-size: 30px;
+    color: white;
+}
