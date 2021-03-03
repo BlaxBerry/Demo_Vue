@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>v-if & v-show</title>
+    <style>
+        .box {
+            height: 100px;
+            width: 100px;
+            background-color: brown;
+            margin: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="app">
+        <button @click='fn_1'>if</button>
+        <button @click='fn_2'>show</button>
+        <div class="box" v-if="a">if</div>
+        <div class="box" v-show="b">show</div>
+    </div>
+    <!-- 生产环境版本，优化了尺寸和速度 -->
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+
+    <script>
+        var app = new Vue({
+            el: "#app",
+            data: {
+                a: true,
+                b: true
+            },
+            methods: {
+                fn_1: function() {
+                    this.a = !this.a;
+                },
+                fn_2: function() {
+                    this.b = !this.b;
+                }
+            }
+        })
+        console.log('v-show 只是样式的显示隐藏');
+        console.log('v-if 是DOM结构的显示和隐藏');
+    </script>
+</body>
+
+</html>

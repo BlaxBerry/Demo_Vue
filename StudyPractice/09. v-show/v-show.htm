@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>v-show</title>
+</head>
+
+<body>
+
+    <div id="app">
+        <button @click='change'>change</button>
+        <img src="https://github.com/BlaxBerry/Demo_CSS/blob/master/slider_pics/images/04.jpeg?raw=true" v-show="flag">
+    </div>
+    <!-- 生产环境版本，优化了尺寸和速度 -->
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+
+    <script>
+        var app = new Vue({
+            el: "#app",
+            data: {
+                flag: true,
+            },
+            methods: {
+                change: function() {
+                    this.flag = !this.flag;
+                }
+            }
+        })
+    </script>
+</body>
+
+</html>
