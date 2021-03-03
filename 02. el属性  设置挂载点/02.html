@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vue基础 2</title>
+</head>
+
+<body>
+    <!-- div 和 span 标签 -->
+    <div id="app">
+        <span>
+            {{message}}
+        </span>
+    </div>
+
+    <!-- h1标签 -->
+    <h1 id="title">
+        {{message}}
+    </h1>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script>
+        var app = new Vue({
+            el: '#app',
+            data: {
+                message: "hello"
+            }
+        })
+        var app = new Vue({
+            el: "#title",
+            data: {
+                message: "hello"
+            }
+        })
+    </script>
+
+</body>
+
+</html>
