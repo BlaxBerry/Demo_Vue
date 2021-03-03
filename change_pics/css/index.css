@@ -1,0 +1,53 @@
+body {
+    background-color: black;
+}
+
+#app {
+    height: 544px;
+    width: 544px;
+    position: relative;
+}
+
+img {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+span {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: rgba(0, 0, 0, .7);
+    height: 50px;
+    width: 50px;
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 50%;
+}
+
+.left,
+.right {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 222;
+    height: 100px;
+    width: 60px;
+    background-color: rgba(0, 0, 0, .5);
+    color: white;
+    font-size: 70px;
+    line-height: 100px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.left {
+    left: -30px;
+}
+
+.right {
+    right: -30px;
+}
