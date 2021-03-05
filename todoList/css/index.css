@@ -1,0 +1,73 @@
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 40px;
+    color: #dc143c;
+}
+
+.main {
+    width: 400px;
+    font-size: 20px;
+    line-height: 50px;
+    background-color: #fff;
+    overflow: hidden;
+    box-shadow: 1px 1px 6px #8a8a8a;
+}
+
+.putIn {
+    height: 50px;
+    border-bottom: 5px solid #ccc;
+}
+
+.putIn input {
+    outline: none;
+    border: none;
+    height: 100%;
+    width: 100%;
+    padding-left: 20px;
+    color: #ccc;
+    font-size: 20px;
+}
+
+.list ul li {
+    height: 50px;
+    padding: 0 10px;
+    border-bottom: 1px solid #ccc;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.list ul li:hover .rm {
+    visibility: visible;
+}
+
+.list ul li .rm {
+    visibility: hidden;
+    color: #dc143c;
+    font-size: 12px;
+}
+
+.total {
+    height: 40px;
+    line-height: 40px;
+    padding: 0 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 12px;
+    color: #ccc;
+}
+
+.total span {
+    color: #dc143c;
+}
+
+.total a:hover {
+    color: #dc143c;
+}
+
+p {
+    margin-top: 20px;
+    text-align: center;
+}

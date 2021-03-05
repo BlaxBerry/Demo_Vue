@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>vue todoList</title>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/index.css">
+    <!-- 开发环境版本，包含了有帮助的命令行警告 -->
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+</head>
+
+<body>
+    <div id="app">
+        <h1>todo List</h1>
+        <div class="main">
+            <div class="putIn">
+                <input type="text" autofocus v-model="message" @keyup.enter="add"></div>
+            <div class="list ">
+                <ul>
+                    <li v-for='(item,index) in arr'>
+                        <span class="index ">{{index +1}}.</span>
+                        <span class="content ">{{item}}</span>
+                        <a class="rm" href="javascript:;" @click="remove(index)">remove</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="total" v-if="arr.length!=0">
+                <div>Total <span>{{arr.length}}</span> Items</div>
+                <a href="javascript:;" @click="clearAll">Clear All Items</a>
+            </div>
+        </div>
+        <p>
+            <a href="https://github.com/BlaxBerry">my github</a>
+        </p>
+    </div>
+
+    <script src="js/index.js"></script>
+</body>
+
+</html>
