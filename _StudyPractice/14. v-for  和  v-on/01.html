@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- 开发环境版本，包含了有帮助的命令行警告 -->
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+</head>
+
+<body>
+    <div id="app">
+        <ul>
+            <li v-for="(item,index) in arr"><span>{{item.name}}</span></li>
+        </ul>
+        <button @click="add">add</button>
+        <button @click="remove">remove</button>
+    </div>
+
+    <script>
+        var app = new Vue({
+            el: '#app',
+            data: {
+                arr: [{
+                    name: 'hambuger'
+                }, {
+                    name: 'taco'
+                }]
+            },
+            methods: {
+                add: function() {
+                    this.arr.push({
+                        name: 'beer'
+                    })
+                },
+                remove: function() {
+                    this.arr.pop()
+                }
+            }
+        })
+    </script>
+
+
+</body>
+
+</html>
