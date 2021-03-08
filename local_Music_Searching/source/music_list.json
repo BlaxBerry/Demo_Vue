@@ -1,0 +1,31 @@
+[{
+    "name": "Bangarang",
+    "singer": "AuthorSkrillex",
+    "time": "03:36",
+    "linkSrc": "./source/Bangarang.mp3",
+    "cover": "./source/Bangrang.jpeg"
+}, {
+    "name": "Beautiful",
+    "singer": "Eminem",
+    "time": "06:32",
+    "linkSrc": "./source/Beautiful.mp3",
+    "cover": "./source/Beautiful.jpeg"
+}, {
+    "name": "Lose Yourself",
+    "singer": "Eminem",
+    "time": "05:22",
+    "linkSrc": "./source/Lose Yourself.mp3",
+    "cover": "./source/Lose Yourself.jpg"
+}, {
+    "name": "Witout Me",
+    "singer": "Eminem",
+    "time": "04:50",
+    "linkSrc": "./source/Witout Me.mp3",
+    "cover": "./source/Without Me.jpeg"
+}, {
+    "name": "Move Your Body",
+    "singer": "Sia, Alan Walker",
+    "time": "03:37",
+    "linkSrc": "./source/Move Your Body.mp3",
+    "cover": "./source/Move Your Body.jpeg"
+}]
